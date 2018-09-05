@@ -2,6 +2,7 @@ h1 {
   font-size: 41pt;
   color: white;
   background-color: black;
+  border-style: solid dotted dashed ;
 }
 
 body {
