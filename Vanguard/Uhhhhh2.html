@@ -171,31 +171,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript" src="interactive2/Vanguard/script.js"></script>
-<script src="impetus.min.js"></script>
 
-<script>
-	var dotEl = document.getElementsByClassName('LetterBox');
-	var dotParent = dotEl.offsetParent;
-
-	var dotImpetus = new Impetus({
-		source: dotEl,
-		initialValues: [dotParent.offsetWidth/2 - 25, 45],
-		boundX: [0, dotParent.offsetWidth - dotEl.offsetWidth],
-		boundY: [0, dotParent.offsetHeight - dotEl.offsetHeight],
-		update: function(x, y) {
-			this.style.left = x + 'px';
-			this.style.top = y + 'px';
-		}
-	});
-
-	new Impetus({
-		source: '#Cube',
-		multiplier: 0.7,
-		update: function(x, y) {
-			this.style.transform = this.style.webkitTransform = 'translateZ(-120px) rotateY('+x+'deg) rotateX('+(-y)+'deg)';
-		}
-	});
-
-</script>
 
 </body></html>
