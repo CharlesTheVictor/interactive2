@@ -25,13 +25,14 @@
 #output {
   width: 138.5em;
   height: 640px;
-  top: 25%;
-	margin: auto;
-	background: black;
-	position: relative;
+  top: 27%;
+  left: 96.75px;
+  margin: auto;
+  background: black;
+  position: fixed;
   color: white;
   font-size: 50%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #input {
