@@ -826,10 +826,8 @@ box-shadow: inset 0em 0em 0 0.5em, inset 0em 1em 0 0.5em, 2em 2em 0 0.5em, 1em 3
   }
 
 	.VanguardTitle {
-		top: 100px;
 		position: relative;
 		margin: auto;
-
 	}
 
 
@@ -853,6 +851,7 @@ box-shadow: inset 0em 0em 0 0.5em, inset 0em 1em 0 0.5em, 2em 2em 0 0.5em, 1em 3
   #group1 {
     z-index: 5; /* slide over group 2 */
     cursor: url('Cursor2.png'), default;
+    overflow: hidden;
   }
   #group1 .parallax__layer--base {
     background: Black;
