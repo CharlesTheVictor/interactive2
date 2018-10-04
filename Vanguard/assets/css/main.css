@@ -331,6 +331,31 @@ div[class^="PUNCBOX"] {
     height: 0;
 }
 
+.PUNCBOX5 {
+  width: 1.5em;
+	height: 10.5em;
+	padding: .5em 1em 1em .5em;
+	position: relative;
+}
+.COLON {
+  box-shadow: 0em 8em 0 0.5em, 0em 4em 0 0.5em;
+  width: 0;
+  height: 0;
+}
+
+.PUNCBOX6 {
+  width: 1.5em;
+	height: 10.5em;
+	padding: .5em 1em 1em .5em;
+	position: relative;
+}
+.SEMICOLON {
+  box-shadow: 0em 8em 0 0.5em, 0em 4em 0 0.5em, 0em 9em 0 0.5em, -1em 10em 0 0.5em;
+  width: 0;
+  height: 0;
+}
+
+
 
 
 .LetterBoxA {

@@ -574,6 +574,20 @@ $('#input').keydown(function(e) {
 	}
 });
 
+$('#input').keydown(function(e) {
+  $('#output');
+	if (e.which == 186 ) {
+    $('#output').append('<div class="PUNCBOX5"><div class="COLON"></div></div>');
+	}
+});
+
+$('#input').keydown(function(e) {
+  $('#output');
+	if (e.which == 222 ) {
+    $('#output').append('<div class="PUNCBOX6"><div class="SEMICOLON"></div></div>');
+	}
+});
+
 
 
 
