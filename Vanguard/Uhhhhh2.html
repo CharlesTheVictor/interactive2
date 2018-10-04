@@ -1,0 +1,201 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Vanguard</title>
+<style></style>
+<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+</head>
+
+<body>
+
+  <div class="parallax">
+    <div id="group1" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+ <img class="VanguardTitle" src="/Users/charles/Documents/CCA/3rd Year/Interactive 2/Vanguard/assets/Vanguard2.gif" alt="VanguardTitle" width="auto" height="auto">
+      </div>
+    </div>
+
+    <div id="group2" class="parallax__group">
+
+      <div class="parallax__layer parallax__layer--back">
+
+        <div class="stage">
+    			<div class="LetterBoxA">
+    				<div class="LetterA"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxB">
+    				<div class="LetterB"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxC">
+    				<div class="LetterC"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxD">
+    				<div class="LetterD"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxE">
+    				<div class="LetterE"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxF">
+    				<div class="LetterF"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxG">
+    				<div class="LetterG"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxH">
+    				<div class="LetterH"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxI">
+    				<div class="LetterI"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxJ">
+    				<div class="LetterJ"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxK">
+    				<div class="LetterK"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxL">
+    				<div class="LetterL"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxM">
+    				<div class="LetterM"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxN">
+    				<div class="LetterN"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxO">
+    				<div class="LetterO"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxP">
+    				<div class="LetterP"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxQ">
+    				<div class="LetterQ"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxR">
+    				<div class="LetterR"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxS">
+    				<div class="LetterS"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxT">
+    				<div class="LetterT"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxU">
+    				<div class="LetterU"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxV">
+    				<div class="LetterV"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxW">
+    				<div class="LetterW"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxX">
+    				<div class="LetterX"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxY">
+    				<div class="LetterY"></div>
+    				<div></div>
+    			</div>
+
+    			<div class="LetterBoxZ">
+    				<div class="LetterZ"></div>
+    				<div></div>
+    			</div>
+
+
+         </div>
+
+      </div>
+    </div>
+
+    <div id="group3" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <input type="text" id="input">
+        <div id="output"></div>
+      </div>
+
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Users/charles/Documents/CCA/3rd Year/Interactive 2/Vanguard/script.js"></script>
+<script src="impetus.min.js"></script>
+
+<script>
+	var dotEl = document.getElementsByClassName('LetterBox');
+	var dotParent = dotEl.offsetParent;
+
+	var dotImpetus = new Impetus({
+		source: dotEl,
+		initialValues: [dotParent.offsetWidth/2 - 25, 45],
+		boundX: [0, dotParent.offsetWidth - dotEl.offsetWidth],
+		boundY: [0, dotParent.offsetHeight - dotEl.offsetHeight],
+		update: function(x, y) {
+			this.style.left = x + 'px';
+			this.style.top = y + 'px';
+		}
+	});
+
+	new Impetus({
+		source: '#Cube',
+		multiplier: 0.7,
+		update: function(x, y) {
+			this.style.transform = this.style.webkitTransform = 'translateZ(-120px) rotateY('+x+'deg) rotateX('+(-y)+'deg)';
+		}
+	});
+
+</script>
+
+</body></html>
