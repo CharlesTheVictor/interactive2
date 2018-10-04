@@ -1,4 +1,14 @@
-body {
+
+
+#group1:active {
+  cursor: url('Cursor1.png'), default;
+}
+
+#group2:active {
+  cursor: url('Cursor1.png'), default;
+}
+
+#group3:active {
   cursor: url('Cursor1.png'), default;
 }
 
@@ -817,6 +827,7 @@ box-shadow: inset 0em 0em 0 0.5em, inset 0em 1em 0 0.5em, 2em 2em 0 0.5em, 1em 3
 
   #group1 {
     z-index: 5; /* slide over group 2 */
+    cursor: url('Cursor2.png'), default;
   }
   #group1 .parallax__layer--base {
     background: Black;
@@ -824,6 +835,7 @@ box-shadow: inset 0em 0em 0 0.5em, inset 0em 1em 0 0.5em, 2em 2em 0 0.5em, 1em 3
 
   #group2 {
     z-index: 3; /* slide under groups 1 and 3 */
+    cursor: url('Cursor3.png'), default;
   }
   #group2 .parallax__layer--back {
     background: white;
@@ -832,6 +844,7 @@ box-shadow: inset 0em 0em 0 0.5em, inset 0em 1em 0 0.5em, 2em 2em 0 0.5em, 1em 3
   #group3 {
     z-index: 4; /* slide over group 2 and 4 */
     height: 910px;
+    cursor: url('Cursor2.png'), default;
   }
   #group3 .parallax__layer--base {
     background: black;
