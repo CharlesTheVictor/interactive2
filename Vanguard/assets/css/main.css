@@ -80,7 +80,7 @@ div[class^="PUNCBOX"] {
   left: 35%;
   position: absolute;
   z-index: 1;
-  background-image: url("assets/grid.jpg");
+  background-image: url("grid.jpg");
   background-size: 1em 1em;
 }
 
