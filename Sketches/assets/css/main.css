@@ -407,14 +407,18 @@ box-shadow: inset 0em 0em 0 0.5em, inset 0em 1em 0 0.5em, 2em 2em 0 0.5em, 1em 3
 	height: 0;
 }
 
-
+div[class^="LetterBox"]:hover{
+  -webkit-transform: scale(2.4);
+  transform: scale(2.4);
+  color: red;
+}
 
 @keyframes spin {
   from {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(1.9);
   }
 }
 
